@@ -5,6 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    function Temperature(C) {
+        return {
+            C,
+            CelsiustodegreesFahrenheit : function () {
+                let F = 0;
+                F = (C * 9/5) + 32
+                console.log(F);
+            },
+            CelsiustodegreesKenvin : function () {
+                let K = 0;
+                K = C + 273.15
+                console.log(K);
+            }
+        }
+    }
+    let change = Temperature(25);
+    change.CelsiustodegreesFahrenheit();
+    change.CelsiustodegreesKenvin();
+</script>
 </body>
 </html>
